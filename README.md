@@ -1,5 +1,6 @@
 # TravelPartner(伴旅网) APP  Project
 >版权啥的，就随风去吧 — — [@FoolishBoys](https://github.com/FoolishBoys)
+
 ## 前言(Introduction)
 
 在接触了编程和Android一年后，这个Project，我的第一个练手的小项目，也算是马马虎虎初步成型了。虽然还没能联网（喷了一口老血...）、ViewPager里的ListView获取不到数据、一大坨功能根本就没实现还bug一大堆......但是不管怎么说，在一个大四学长[@mayemonkey](https://github.com/mayemonkey)指导下，一个人摸爬滚打走到了现在，通过了软件类课程设计的期末答辩，想想还是挺艰难的（噗！浪的时间居多）。
