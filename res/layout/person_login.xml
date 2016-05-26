@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <LinearLayout
+        android:id="@+id/linerlaout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login"
+        android:layout_marginBottom="20dp" >
+
+	    <EditText
+	        android:id="@+id/ID"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:inputType="textPersonName"
+	        android:hint="用户名"
+	        android:gravity="center"/>
+	
+	    <EditText
+	        android:id="@+id/Password"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textPassword"
+	        android:hint="密码"
+	        android:gravity="center" >
+	    </EditText>
+	
+	</LinearLayout>
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true">
+		
+        
+        <Button 
+            android:id="@+id/login_in"
+     		android:layout_width="135dp"
+     		android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#df0e23"
+        	android:text="登  录"
+        	android:textSize="15sp"
+        	android:textColor="#ffffff"/>
+
+		<Button 
+		    android:id="@+id/login_up"
+		    android:layout_width="135dp"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentRight="true"
+			android:text="注  册"
+        	android:textSize="15sp"
+		    android:background="#BFBFBF"/>
+	</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Person"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+		android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/person" />
+
+</RelativeLayout>

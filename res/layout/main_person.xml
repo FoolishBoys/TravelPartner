@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+	    <RelativeLayout 
+	        android:id="@+id/person_headlayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+		    <ImageView
+		        android:id="@+id/person_backimage"
+		        android:layout_width="match_parent"
+		        android:layout_height="210dp"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/person_bg" />
+		
+		    <FrameLayout
+		        android:id="@+id/person_frame"
+		        android:layout_width="74dp"
+		        android:layout_height="74dp"
+		        android:layout_marginLeft="12dp"
+		        android:layout_marginTop="166dp"
+		        android:background="#ffffff" >
+		
+		        <ImageView
+		            android:id="@+id/person_headView2"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:padding="2dp"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/person" />
+		    </FrameLayout>
+		
+		    <TextView 
+		        android:id="@+id/person_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="181dp"
+		        android:layout_marginLeft="98dp"
+		        android:textStyle="bold"
+		        android:textColor="#ffffff"
+		        android:text="阳光宅男"/>
+
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/person_backimage"
+		        android:layout_marginTop="7dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="个人资料" />
+
+		   </RelativeLayout>
+        	
+	    	
+        
+	    
+	    
+    </ScrollView>
+    
+</RelativeLayout>

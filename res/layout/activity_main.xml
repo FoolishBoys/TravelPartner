@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.realtext.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#df0e23"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/main_TopButton_Zxing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@null"
+            android:background="#df0e23"
+            android:drawableTop="@drawable/top_zxing" />
+
+        <AutoCompleteTextView
+            android:id="@+id/main_TopSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:hint="@string/ACTView" />
+            
+            
+            
+        <Button
+            android:id="@+id/main_TopButton_Person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@null"
+            android:background="#df0e23"
+            android:drawableTop="@drawable/top_mine" />
+        
+        
+    </LinearLayout>
+
+	        
+	<com.example.LittleThings.NoScrollViewPager
+        android:id="@+id/main_Frag_Body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+	        
+    
+    
+    <LinearLayout
+        android:id="@+id/main_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <RadioGroup
+            android:id="@+id/main_BottomGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/main_L_Bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@null"
+                android:drawableTop="@drawable/selector_tab_map" />
+
+            <RadioButton
+                android:id="@+id/main_LM_Button"
+                android:checked="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@null"
+                android:drawableTop="@drawable/selector_tab_travel" />
+
+            <RadioButton
+                android:id="@+id/main_RM_Buttom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@null"
+                android:drawableTop="@drawable/selector_tab_push" />
+            
+            <RadioButton
+                android:id="@+id/main_R_Buttom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@null"
+                android:drawableTop="@drawable/selector_tab_story" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
+

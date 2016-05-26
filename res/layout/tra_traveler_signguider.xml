@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<Button
+	    android:id="@+id/tra_img_signupguider"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#cccccc" 
+	    android:text="点击申请导游"
+	    android:gravity="center"/>
+    
+</LinearLayout>

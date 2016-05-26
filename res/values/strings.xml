@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Real Text</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="ACTView">查找地点....</string>
+    
+    <string name="Marquee_text">这是自定义跑马灯！这是自定义跑马灯！这是自定义跑马灯！这是自定义跑马灯！这是自定义跑马灯！</string>
+
+</resources>

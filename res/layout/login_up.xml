@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/signUp_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageButton 
+            android:id="@+id/signUp_headreturn"
+			android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:src="@drawable/signup_headreturn"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户注册"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginup_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:background="#BFBFBF"
+        android:text="昵称:" />
+
+    <EditText
+        android:id="@+id/loginup_input_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+    </EditText>
+    
+    <TextView
+        android:id="@+id/loginup_userID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:background="#BFBFBF"
+        android:text="账号：" />
+
+    <EditText
+        android:id="@+id/loginup_input_userID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+    </EditText>
+    
+    <TextView
+        android:id="@+id/loginup_userPassw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:background="#BFBFBF"
+        android:text="密码：" />
+
+    <EditText
+        android:id="@+id/loginup_input_userPassw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword" >
+
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/signUp_ck"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="25sp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:layout_marginLeft="-50dp"
+        android:text="同意xxxxxx条款" />
+
+    <Button
+        android:id="@+id/signUp_finish"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:background="#ff0000"
+        android:text="注   册" />
+
+</LinearLayout>
