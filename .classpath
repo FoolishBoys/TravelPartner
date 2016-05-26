@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/AMap_Android_3DMapSDK_V3.1.0_20151124.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/RealText/libs/AMap_Android_3D_SDK_Doc2.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/AMap_Services_V2.7.0_20151125.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/RealText/libs/AMap_Android_Search_SDK_Doc2.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

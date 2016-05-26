@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.realtext"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <!-- 高德3D地图权限 -->
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <!-- 定位包、导航包需要的瑞文权限 -->
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        
+        <!-- 定位错误信息代号10：请检查AndroidManifest.xml文件是否配置了APSService定位服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <meta-data 
+            android:name="com.amap.api.v2.apikey"
+        	android:value="f216f853eb5befbdbc3d64b36098f2c2"
+            />
+        
+        
+        <activity
+            android:name="com.example.enterView.EnterActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.example.realtext.MainActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name">
+            
+            <intent-filter >
+                <action android:name="android.intent.action.IMAGE_CAPTURE" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 
+        <activity 
+            android:name="com.example.realtext.ZxingView"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+            
+        </activity>
+         -->
+         
+        <activity 
+            android:name="com.example.FragView.Frag_Push_Extra"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity 
+            android:name="com.example.realtext.PersonView"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity 
+            android:name="com.example.enterView.person_login"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity 
+            android:name="com.example.enterView.login_up_default"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:label="@string/app_name" >
+            
+        </activity>
+
+        
+
+        
+    </application>
+
+</manifest>
